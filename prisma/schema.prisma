@@ -12,6 +12,7 @@ enum TaskStatus {
   PENDIENTE
   EN_CURSO
   COMPLETADA
+  CANCELADA
 }
 
 model User {

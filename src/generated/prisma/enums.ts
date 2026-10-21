@@ -12,7 +12,8 @@
 export const TaskStatus = {
   PENDIENTE: 'PENDIENTE',
   EN_CURSO: 'EN_CURSO',
-  COMPLETADA: 'COMPLETADA'
+  COMPLETADA: 'COMPLETADA',
+  CANCELADA: 'CANCELADA'
 } as const
 
 export type TaskStatus = (typeof TaskStatus)[keyof typeof TaskStatus]

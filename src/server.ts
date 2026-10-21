@@ -1,4 +1,5 @@
 
+import taskRoutes from "./api/routes/task.routes.js";
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
@@ -13,6 +14,7 @@ app.use(express.json());
 
 app.use("/health", healthRoutes);
 app.use("/auth", authRoutes);
+app.use("/tasks", taskRoutes);
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
