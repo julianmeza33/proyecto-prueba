@@ -95,3 +95,28 @@ Estas pruebas cubren los esquemas de validación; no sustituyen las pruebas de i
 ### Limitaciones de las verificaciones
 
 Las pruebas automatizadas actuales cubren la validación de datos. Las comprobaciones de CRUD y autorización se realizaron manualmente. No se afirma que existan pruebas automatizadas de integración HTTP o de base de datos.
+
+## 9. Verificación desde un clon limpio
+
+Se clonó el repositorio publicado en GitHub en una carpeta independiente
+y se instalaron las dependencias mediante `npm.cmd ci`.
+
+Resultados:
+- Pruebas automatizadas: 11 de 11 aprobadas.
+- Compilación TypeScript: sin errores.
+- Migraciones: no había migraciones pendientes.
+- Endpoint `/health`: respondió con estado correcto y conexión exitosa
+  a la base de datos.
+- Documentación `/api-docs`: respondió con HTTP 200.
+
+Esta comprobación se realizó desde el clon de GitHub, sin modificar
+el proyecto original.
+
+## 10. Trazabilidad de los prompts de IA
+
+El registro de decisiones describe el uso de IA, los motivos de aceptación
+de las propuestas y las verificaciones realizadas.
+
+Para cumplir con un requisito de prompts exactos, se deben incorporar
+las solicitudes literales recuperadas del historial de desarrollo.
+Los resúmenes de decisiones no se presentan como citas textuales.
